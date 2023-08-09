@@ -7,5 +7,5 @@ urlpatterns = [
     path("", views.list, name="list"),
     path("<int:pk>/", views.detail, name="detail"),
     path("status/", views.status, name="status"),
-
+    path("reorder/", views.reorder, name="reorder"),
 ]

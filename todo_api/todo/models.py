@@ -10,6 +10,7 @@ class Todo(models.Model):
     title = models.CharField(max_length=200)
     status = models.ForeignKey(Status, on_delete=models.CASCADE)
     pub_date = models.DateTimeField(auto_now_add=True)
+    position = models.IntegerField(blank=True, default=0)
 
     def __str__(self):
         return self.title
